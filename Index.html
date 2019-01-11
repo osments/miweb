@@ -1,0 +1,287 @@
+﻿<!-- etiqueta para especifcar que traajamos con HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+<!-- en la cabeza pondremos metadatos, LINKS, estilos CSS, Javascript, etc... -->
+<head>
+	<meta charset="utf-8" />
+	<meta name="Description" content="blog dedicado a recetas de cocina">
+	<meta content="Alfonso Morales Dell'Olmo" name="author">
+	<meta content="recetas, cocina, comida, salud" name="keywords">
+	<!-- Aquí hacemos referencia a hojas de estilos local -->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<!-- aquí ponemos un icono para que aparezca en la pestaña del navegador y favoritos... está dimensionada en 16x16 -->
+	<link rel="icon" type="image/png" href="images/1.png" />
+	<!-- título del documento, aparece en el navegador... -->
+	<title>Bloguecetas</title>
+</head>
+<!-- Este es el cuerpo del doc HTML y aquí agregamos nuestros elementos HTML -->
+<body>
+	<!-- esta es la cabecera de un documento o sección, podemos agregar un logo -->
+	<header>
+		<h1>Bienvenidos a BLOGUECETAS</h1><br/>
+		<img src="images/logo_header.png" alt="logo BLOGUECETAS"/>
+	</header>
+	<!-- menú, menú desplegable, bloque de navegación, donde incluiremos diferentes enlaces para que el usuario pueda desplazarse entre las partes de nuestro sitio web -->
+	<nav>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#tortilla">Tortilla de bacalao</a></li>
+			<li><a href="#lasaña">Lasaña boloñesa</a></li>
+			<li><a href="#ensalada">Ensalada de pasta y atún</a></li>
+			<li><a href="#pie">Acerca de</a></li>
+		</ul>
+	</nav>
+	<!-- una capa que contiene varios elementos, en esta caso "article". define grandes secciones de nuestra página, sección genérica del documento que agrupa contenido similar-->
+	<section>
+		<!--  son publicaciones que puedde contener el sitio. marca los límites de un contenido específico, como una entrada de un blog o un artículo en general, especifica un artículo que puede ser distribuido de forma independiente, por ejemplo por la sindicación de contenidos -->
+		<article>
+			<img id="tortilla" src="miweb/images/tortilla_bacalao.jpg" alt="Tortilla de bacalao"/>
+			<!-- aquí especificamos las características de la animación canvas para posteriormente crear un script con un texto y características determinadas -->
+			<canvas id="canvas_tortilla" width="400" height="60" style="border:1px solid #d3d3d3;"> Tu navegador no soporta el tag canvas de HTML5.</canvas>
+			<script>
+				var c = document.getElementById("canvas_tortilla");
+				var ctx = c.getContext("2d");
+				ctx.font = "30px Arial";
+				ctx.strokeText("Tortilla de bacalao y puerros",10,40);
+			</script>
+			<table>
+				<tr>
+					<th>Ingrediente</th>
+					<th>Cantidad</th>
+				</tr>
+				<tr>
+					<td>Aceite de oliva virgen extra</td>
+					<td>80 gramos</td>
+				</tr>
+				<tr>
+					<td>Ajo</td>
+					<td>4 dientes</td>
+				</tr>
+				<tr>
+					<td>Bacalao en salazón remojado y desalado</td>
+					<td>300 gramos</td>
+				</tr>
+				<tr>
+					<td>Puerros en rodajas</td>
+					<td>350 gramos</td>
+				</tr>
+				<tr>
+					<td>Huevos</td>
+					<td>6 huevos</td>
+				</tr>
+				<tr>
+					<td>Pimienta negra</td>
+					<td>2 pellizcos</td>
+				</tr>
+			</table>
+			</br>
+			<details>
+				<summary>Preparación</summary>
+				<ol>
+					<li>Ponga en el vaso el aceite y el ajo. Pique 3seg/vel7 y sofreir 4min/120°c/vel1</li>
+					<li>Incorpore el bacalao y sofría 3min/120°c/giro inverso/vel cuchara. (3min/Varoma/giro inverso/vel cuchara)</li>
+					<li>Vierta en el cestillo colocado sobre un bol para recuperar el líquido de cocción. Dejar templar el bacalao, desmenúcelo para quitar las espinas y reserve.</li>
+					<li>Ponga en el vaso el líquido de cocción del bacalao y los puerros y trocee 3seg/vel5. Retire el cubilete y programe 12min/Varoma/giro inverso/vel1. Vierta en el cestillo para escurrir y reserve.</li>
+					<li>Ponga en el vaso los huevos y la pimienta y bata 5seg/vel3</li>
+					<li>Añada los puerros escurridos y el bacalao desmenuzado y mezcle 3seg/vel3. Termine de envolver con la espátula.</li>
+					<li>Cuaje la tortilla por ambos lados en una sartén bien caliente engrasada con aceite.</li>
+					<li>Sirva o reserve.</li>
+				</ol>
+			</details>
+			<details>
+				<summary>Vídeo del procedimiento</summary>
+				<video width="600" controls>
+					<source src="videos/tortilla.mp4" type="video/mp4">
+					Tu navegador no soporta video HTML5.
+				</video>
+			</details>
+			</br>
+			<h1><a href="#">Volver al inicio</a></h1>
+			</br></br>
+		</article>
+		<article>
+			<img id="lasaña" src="images/lasaña_boloñesa.jpg" alt="Lasaña boloñesa"/>
+			<!-- aquí especificamos las características de la animación canvas para posteriormente crear un script con un texto y características determinadas -->
+			<canvas id="canvas_lasaña" width="300" height="60" style="border:1px solid #d3d3d3;"> Tu navegador no soporta el tag canvas de HTML5.</canvas>
+			<script>
+				var c = document.getElementById("canvas_lasaña");
+				var ctx = c.getContext("2d");
+				ctx.font = "30px Arial";
+				ctx.strokeText("Lasaña de boloñesa",10,40);
+			</script>
+			<table>
+				<tr>
+					<th>Ingrediente</th>
+					<th>Cantidad</th>
+				</tr>
+				<tr>
+					<td>Placas de lasaña</td>
+					<td>Variable</td>
+				</tr>
+				<tr>
+					<td>Carne picada</td>
+					<td>400 gramos</td>
+				</tr>
+				<tr>
+					<td>Queso parmesano</td>
+					<td>100 gramos</td>
+				</tr>
+				<tr>
+					<td>Zanahoria</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Cebolla</td>
+					<td>1/2</td>
+				</tr>
+				<tr>
+					<td>Tomate natural triturado</td>
+					<td>500 gramos</td>
+				</tr>
+				<tr>
+					<td>Vino blanco</td>
+					<td>70 gramos</td>
+				</tr>
+				<tr>
+					<td>Aceite de oliva</td>
+					<td>100 gramos</td>
+				</tr>
+				<tr>
+					<td>Sal, pimienta, orégano</td>
+					<td>Variable</td>
+				</tr>
+				<tr>
+					<td>Leche</td>
+					<td>700 gramos</td>
+				</tr>
+				<tr>
+					<td>Harina</td>
+					<td>100 gramos</td>
+				</tr>
+				<tr>
+					<td>Nuez moscada</td>
+					<td>Variable</td>
+				</tr>
+			</table>
+			</br>
+			<details>
+				<summary>Preparación</summary>
+				<ol>
+					<li>Rallar el queso con 2 ó 3 golpes de turbo y reservar.</li>
+					<li>Poner en el vaso la cebolla y la zanahoria. Triturar 5 seg. vel. 7. (Bajar los restos con la espátula).</li>
+					<li>Añadir el aceite : 5 min. 100º vel. 1.</li>
+					<li>Incorporar la carne y programar 10 min. varoma, giro izda. vel. cuchara. </li>
+					<li>Cuando falten 5 minutos echar por el bocal el vino.</li>
+					<li>Incorporar tomate, sal, pimienta y orégano y programar: 30 min. varoma, giro izda. vel. cuchara.</li>
+					<li>Lavar el vaso para preparar un bechamel rápida : Poner leche, harina, aceite y especias y programar  8 min. 100º vel. 4</li>
+					<li>En una fuente de horno poner una primera base de placas de lasaña, encima una parte de la carne con la salsa.</li>
+					<li>Poner una segunda capa de placas y de carne.</li>
+					<li>Añadir una capa de placas y encima la bechamel.</li>
+					<li>Repetir hasta finalizar con todos los ingredientes.</li>
+					<li>Espolvorear el queso rallado y meter en horno para calentar y gratinar.</li>
+				</ol>
+			</details>
+			<details>
+				<summary>Vídeo del procedimiento</summary>
+				<video width="600" controls>
+					<source src="videos/lasaña.mp4" type="video/mp4">
+					Tu navegador no soporta video HTML5.
+				</video>
+			</details>
+			</br>
+			<h1><a href="#">Volver al inicio</a></h1>
+			</br></br>
+		</article>
+		<article>
+			<img id="ensalada" src="images/ensalada_pasta.jpg" alt="Ensalada de pasta y atún"/>
+			<!-- aquí especificamos las características de la animación canvas para posteriormente crear un script con un texto y características determinadas -->
+			<canvas id="canvas_ensalada" width="580" height="60" style="border:1px solid #d3d3d3;"> Tu navegador no soporta el tag canvas de HTML5.</canvas>
+			<script>
+				var c = document.getElementById("canvas_ensalada");
+				var ctx = c.getContext("2d");
+				ctx.font = "30px Arial";
+				ctx.strokeText("Ensalada de pasta, atún y tomates cherry",10,40);
+			</script>
+			<table>
+				<tr>
+					<th>Ingrediente</th>
+					<th>Cantidad</th>
+				</tr>
+				<tr>
+					<td>Cebolleta</td>
+					<td>Variable</td>
+				</tr>
+				<tr>
+					<td>Aceitunas negras sin hueso</td>
+					<td>50 gramos</td>
+				</tr>
+				<tr>
+					<td>Agua</td>
+					<td>1200 gramos</td>
+				</tr>
+				<tr>
+					<td>Aceite de oliva</td>
+					<td>10 gramos</td>
+				</tr>
+				<tr>
+					<td>Sal</td>
+					<td>1 cucharadita</td>
+				</tr>
+				<tr>
+					<td>Pasta corta (macarrones, lazos, espirales, ...)</td>
+					<td>300 gramos</td>
+				</tr>
+				<tr>
+					<td>Tomates cherry cortados por la mitad</td>
+					<td>200 gramos</td>
+				</tr>
+				<tr>
+					<td>Atún en aceite de oliva</td>
+					<td>2 latas (80 gramos cada una)</td>
+				</tr>
+				<tr>
+					<td>Mayonesa</td>
+					<td>150 gramos</td>
+				</tr>
+				<tr>
+					<td>Mostaza a la antigua</td>
+					<td>2 cucharadas</td>
+				</tr>
+			</table>
+			</br>
+			<details>
+				<summary>Preparación</summary>
+				<ol>
+					<li>Ponemos la cebolleta (80 gr.) partida en cuartos y las aceitunas. Programamos 3 segundos, a velocidad 5. Retiramos del vaso y reservamos.</li>
+					<li>Sin lavar el vaso, vertemos el agua y el aceite. Programamos 10 minutos, temperatura varoma y velocidad 1.</li>
+					<li>Añadimos la pasta y la sal por el bocal y programamos 10 minutos (o el tiempo indicado en el paquete de pasta), temperatura 100º, giro a la izquierda y velocidad cuchara.</li>
+					<li>Colamos la pasta, la aclaramos con agua fría y la vertemos en un bol grande. Añadimos la cebolleta y las aceitunas negras picadas, los tomates, el atún (escurrido), la mayonesa y la mostaza. Mezclamos con cuidado.</li>
+					<li>Decoramos con los aros de cebolleta y dejamos enfriar antes de servir.</li>
+				</ol>
+			</details>
+			<details>
+				<summary>Vídeo del procedimiento</summary>
+				<video width="600" controls>
+					<source src="videos/ensalada.mp4" type="video/mp4">
+					Tu navegador no soporta video HTML5.
+				</video>
+			</details>
+			</br>
+			<h1><a href="#">Volver al inicio</a></h1>
+			</br></br>
+		</article>
+	</section>
+	<!--  se suele utilizar como sección lateral que contiene gadgets (anuncio, contador, se emplea para definir un contenido que está relacionado con la página, pero que se debe considerar como separado del contenido principal -->
+	<aside>
+	<!-- insertamos texto para suscribir al blog (no activo todavía) -->
+	<h1>Suscríbete</h1>
+	
+	</aside>
+	
+	<!-- pie de un documento o sección, pie de página de nuestra web, créditos de la web, fecha de publicación, etc... -->
+	<footer>
+	</br></br><h1 id="pie">2019, Blog de Alfonso Morales. Todos los derechos reservados.</h1>
+	</footer>
+	<!-- agregar etiquetas br y b -->
+</body>
+</html>

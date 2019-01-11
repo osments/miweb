@@ -1,0 +1,133 @@
+/*aquí especificamos las propiedades de todo el documento, en este caso margen y relleno*/
+* {
+	padding:0;
+	margin:5px;
+}
+/*especificamos propiedades del header: tipo y estilo de borde, color de fondo, ancho, altura, relleno...*/
+header {
+	border-style: solid;
+	border-width: 5px;
+	outline-style: double;
+	outline-color: green;
+	background:#5FB404;
+	width:99%;
+	height:100px;
+	padding-bottom:25px;
+}
+/*especificamos las propiedades de <h1> contenidas en el header*/
+header h1 {
+	text-align:center;
+	color:#f2f2f2;
+	font-family:Verdana;
+	font-size:40px;
+}
+/*El texto de un párrafo se centra con text-align: center; pero la imagen al no ser inline no se puede centrar así: tenemos que tratarlo como un bloque --> display: block; y le asignaremos un margen automático para que se centre.*/
+header img {
+	display:block;
+	margin:auto;
+}
+/*propiedades de nav*/
+nav {
+	background:#f2f2f2;
+	border-bottom-style:double;
+	border-bottom-color:gray;
+	list-style-type: none; /*para que las etiquetas <li> (listas) no aparezcan con viñetas*/
+	text-align: center; /*para centrar todo el texto*/
+}
+/*propiedades de los elementos <li> que están dentro de nav*/
+nav li{
+	display: inline-block; /*esto hace que al redimensionar la ventana, el texto se recoloque para tener visibilidad*/
+    padding: 5px;
+  }
+/*propiedades de los links (<a>) dentro de nav li*/
+nav li a{
+	text-decoration:none; /*quita el subrayado de los links*/
+	color:#6e6e6e;
+	font-size:20px;
+	font-family: Verdana;
+	padding:12px 15px 15px 12px; /*el relleno entre cada elemento (link) de la lista: de esta forma especificamos el ancho que tendrá el relleno con hover, osea cuando pasemos el mouse por encima (siguiente paso)*/
+}
+/*propiedades de los links cuando pasamos el ratón por encima --> pseudo clase*/
+nav li a:hover {
+	background:#6e6e6e;
+	color:#f2f2f2;
+}	
+/*estilo tablas*/
+table {
+	font-family:"Verdana";
+	border-collapse: collapse;
+	width: 50%;
+	box-shadow: 8px 8px 6px #aaaaaa;
+}
+
+table td, th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+svg {
+	float:left;
+}
+/*estilos del footer h1*/
+footer h1 {
+	text-align:center;
+	color:#6FB872;
+	font-family:Verdana;
+	font-size:35px;
+	background-color:#C9FACB;
+}
+/*estilos listas desplegables y su contenido, así como márgenes...*/
+summary {
+	font-size:20px;
+	font-family: Verdana;
+}
+/*estilos del section y sus elementos*/
+section{
+	display:inline-block;
+	width:1800px;
+	height:100%; /*en porcentaje para que se agrande automáticamente con las listas...*/
+	background:white;
+	/*float:left;*/
+}
+section li {
+	font-size:15px;
+	font-family: Verdana;
+	margin-left:100px;
+}
+section video {
+	margin-left:100px;
+}
+section h1 a{
+	font-size:20px;
+	font-family: Verdana;
+	text-decoration:none;
+	margin-left:28px;
+}
+section h1 a:hover{
+	color:#6FB872;
+}
+/*aplicar borde redondeado a las imágenes que están dentro del section*/
+section img {
+border: 2px solid #007000;
+border-radius:25px;
+}
+
+/*estilo del aside*/
+aside {
+	width:100px;
+	background:white;
+	display:inline-block;
+	float:right;
+	margin-right:50px;
+}
